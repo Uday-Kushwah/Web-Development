@@ -1,0 +1,41 @@
+div {
+    height: 250px ;
+    width: 300px;
+}
+
+.side-a {
+    background-color: cyan;
+    border: 3px solid black;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.side-b {
+    background-color: deeppink;
+    border: 3px solid black;
+    transform: rotateY(180deg);
+}
+
+.wrapper {
+    margin: 40px auto;
+    position: relative;
+    height: 250px ;
+    width: 300px;
+    transition: 2s;
+    transform-style: preserve-3d;
+} */
+
+/* body { */
+    /* parent propert */
+    /* perspective: 900px;
+
+}
+
+.side-a,.side-b {
+    position: absolute;
+}
+
+
+.wrapper:hover {
+    transform: rotateY(180deg);
+}
+
