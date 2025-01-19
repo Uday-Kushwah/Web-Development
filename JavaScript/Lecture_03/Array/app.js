@@ -158,3 +158,9 @@ const arr4 = [1,2,3,4]
 console.log(arr4)
 arr4[2] = 10;
 console.log(arr4)
+
+
+
+//Multi dimensional array =================================
+let nums = [[1,2],[3,4],[5,6]]
+console.log(nums)
