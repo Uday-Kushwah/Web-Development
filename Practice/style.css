@@ -1,4 +1,4 @@
-div {
+/* div {
     height: 250px ;
     width: 300px;
 }
@@ -24,9 +24,9 @@ div {
     transform-style: preserve-3d;
 } */
 
-/* body { */
-    /* parent propert */
-    /* perspective: 900px;
+/* body { 
+      //parent propert
+     perspective: 900px;
 
 }
 
@@ -38,4 +38,40 @@ div {
 .wrapper:hover {
     transform: rotateY(180deg);
 }
+   */
 
+section{
+    perspective: 1000px;
+}
+
+.wrapper {
+    background-color: yellow;
+    position: relative;
+    height: 260px;
+    width: 210px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+.side-a, .side-b{
+    border: 3px solid black;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    
+}
+.side-a {
+    background-color: cyan;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.side-b{
+    background-color: crimson;
+    transform: rotateY(180deg);
+}
+
+
+.wrapper:hover {
+    transform: rotatey(180deg);
+}

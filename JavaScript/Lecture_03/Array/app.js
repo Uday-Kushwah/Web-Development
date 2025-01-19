@@ -162,5 +162,16 @@ console.log(arr4)
 
 
 //Multi dimensional array =================================
-let nums = [[1,2],[3,4],[5,6]]
+let nums = [[1,2],[3,4],[5,6,5]]
 console.log(nums)
+console.log(nums[0][1])   // 2
+console.log(nums[0][41])   // undefined
+
+
+
+
+//tic tac toe
+let game = [['X',null,'O'],
+            [null,'X',null],
+            ['O',null,'X']]
+console.log(game)

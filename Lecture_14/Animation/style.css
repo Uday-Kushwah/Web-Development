@@ -15,7 +15,7 @@
     background-color: darkseagreen;
     height: 600px;
     animation-name: increaseheight;
-    animation-duration: 3s;
+    animation-duration: 3s; 
     /* animation-delay: 2s; */
     /* animation-timing-function: ease-in; */
     /* animation-timing-function: ease-out; */
@@ -38,7 +38,6 @@
     /* animation-play-state: paused; */
     /* animation-play-state: running; */
 }
-
 @keyframes increaseheight {
     /* from{
         height: 100px;
@@ -67,5 +66,60 @@
     100%{
         height: 300px;
         background-color: rgb(229, 255, 0);
+    }
+}
+
+
+/* =========================== */
+/* 
+.rotate {
+    background-color:blue;
+    height: 200px;
+    width: 200px;
+    border: 5px solid red;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding-left: 20px;
+    color: white;
+}
+
+.rotate:hover {
+    animation-name: rotatebox;
+    animation-duration: 2s;
+}
+
+@keyframes rotatebox {
+    0%{
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(360deg);
+    }
+} */
+
+
+
+/* =============================== */
+.demo:hover .grows-and-stays{
+    animation-name: largetext;
+    animation-duration: 3s;
+}
+
+.grows-and-stays {
+    animation-fill-mode: forwards;
+    border-top: 100px solid grey;
+    animation-timing-function: ease-out;
+}
+
+.demo:hover .grows{
+    animation-name: largetext;
+    animation-duration: 2s;
+}
+
+@keyframes largetext {
+    0% {
+        font-size: 0;
+    }
+    100%{
+        font-size: 50px;
     }
 }

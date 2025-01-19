@@ -1,10 +1,10 @@
 //str.trim() -> trims whitespaces from both ends of string and return new one. 
-/* let message = "      Hello           ";
-console.log(message )
-console.log(message.trim())
+// let message = "      Hello           ";
+// console.log(message )
+// console.log(message.trim())
 
-let password = prompt("Enter your password : ");
-console.log(password.trim()) */
+// let password = prompt("Enter your password : ");
+// console.log(password.trim())
 
 
 //Strings are immutable
@@ -12,7 +12,7 @@ let msg = "        hi....";
 console.log(msg);
 console.log(msg.trim())
 let str = msg.trim();
-console.log(str)
+console.log(str )
 
 
 let Fullname = "Uday Kushwah";
@@ -32,12 +32,13 @@ console.log(str1.indexOf("o"));   //2
 //method chaining
 let str2 = "                       uday kushwah                   ";
 console.log(str2.toUpperCase().trim())
+console.log(str2.trim().toUpperCase())
 
 
 //Slce : Returns a part of the original string as a new string
-let str3 = str1;
-console.log(str3.slice(5))
-console.log(str3.slice(1,4))
+let str3 = "ILoveCoding";
+// console.log(str3.slice(5))
+// console.log(str3.slice(1,4))
 //negative based string
 console.log(str3.slice(-1))
 console.log(str3.slice(-100))
