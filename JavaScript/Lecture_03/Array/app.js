@@ -3,7 +3,7 @@ let students = ["aman","payal","raman"];
 console.log(students)
 console.log(students[0]);
 console.log(students[1]);
-console.log(students[2]);
+console.log(students[92]);    //undefined
 console.log(students.length);
 console.log(typeof students);
 
@@ -73,11 +73,88 @@ console.log(colors.slice(2))
 console.log(colors.slice(2,3)) 
 console.log(colors.slice(-3)) 
 
- 
+
 //splice : removes | replaces | add elements in place 
 // splice(start, deleteCount, item0.....itemN)
-console.log(colors.splice(4))
-console.log(colors)
+let color = ["red","yellow","blue","orange","pink","white"]
+console.log(color.splice(4))    //[ 'pink', 'white' ]
+console.log(color)              //[ 'red', 'yellow', 'blue', 'orange' ]
 
-console.log(colors.splice(0,1))
+console.log(color.splice(0,1))      //[ 'red' ]
+console.log(color)               //[ 'yellow', 'blue', 'orange' ]
 
+console.log(color.splice(0,1,"black","grey"))    //[ 'yellow' ]
+console.log(color)               //[ 'black', 'grey', 'blue', 'orange' ]
+
+
+
+
+console.log()
+// Sorting in array
+let coloring = ["red","green","yellow","orange","violet","sky blue"]
+coloring.sort()
+console.log(coloring)
+
+let num = [1000,100,54,76,23,98,26];
+num.sort()
+console.log(num)
+
+
+//Question Practice
+//1
+console.log("Question Practice");
+let input = ["jaunary","July","march","august"]
+console.log(input.splice(0,2,"july","june"))
+console.log(input)
+// console.log(input.splice(0,1))
+// console.log(input)
+// console.log(input.splice(1,0,"june"))
+// console.log(input)
+
+//2
+let language = ["C","c++","html","javascript","python","java","c#","sql"]
+// language.reverse()
+// console.log(language.indexOf("javascript"))
+
+console.log(language.reverse().indexOf("javascript"))
+
+
+
+
+
+//==============================================
+//arrays reference
+console.log("name"=="name")    //true
+console.log("name"==="name")    //true
+console.log(1=="1")              //true
+console.log(1==="1")             //false
+console.log([1]==[1])             //false
+// console.log([1] === [1])             //false
+console.log([] == [])             //false
+
+let arr3 = ['a','b','c']
+let arr3copy = arr3
+console.log(arr3 == arr3copy)   //point to the same address  true
+console.log(arr3 === arr3copy)   //point to the same address  true
+arr3.push('d')
+console.log(arr3)  //[ 'a', 'b', 'c', 'd' ]
+console.log(arr3copy)  //[ 'a', 'b', 'c', 'd' ]
+arr3.shift()
+console.log(arr3)  //[ 'b', 'c', 'd' ]
+console.log(arr3copy)  //[ 'b', 'c', 'd' ]
+
+//=====================================================
+//Constant array
+let a = 9;
+console.log(a)
+a = 10
+console.log(a)
+const pie = 22/7;
+console.log(pie)
+// b = 3.14;  
+// console.log(b);
+
+const arr4 = [1,2,3,4]
+console.log(arr4)
+arr4[2] = 10;
+console.log(arr4)
