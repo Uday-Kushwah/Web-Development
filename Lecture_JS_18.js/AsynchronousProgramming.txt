@@ -1,3 +1,7 @@
+Synchronous Code :
+-> code execute line by line
+
+
 Asynchronous Programming :
 
 JS : Single Threaded Language -> it has only one call stack
